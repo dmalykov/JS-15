@@ -8,57 +8,57 @@
 </head>
 <body>
 	<script>
-		// Quadratic equation
+		// Quadratic equation 1
 		
-// 			const calculate = (a, b, c) => {
-//       const discriminant = b ** 2 - 4 * a * c;
-//          if (discriminant > 0) {
-//          const x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-//          const x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-//          return { x1, x2 };
-//   }      else if (discriminant === 0) {
-//          const x1 = -b / (2 * a);
-//          return { x1, x2: null };
-//   }      else {
-//          return { x1: null, x2: null };
-//   }
-// };
-//       const roots = calculate(1, 5, 6);
-//       console.log(roots);
+			const calculate = (a, b, c) => {
+      const discriminant = b ** 2 - 4 * a * c;
+         if (discriminant > 0) {
+         const x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+         const x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+         return { x1, x2 };
+  }      else if (discriminant === 0) {
+         const x1 = -b / (2 * a);
+         return { x1, x2: null };
+  }      else {
+         return { x1: null, x2: null };
+  }
+};
+      const roots = calculate(1, 5, 6);
+      console.log(roots);
 		// -------------------------------
 
 		// factorial
 
-// 		function factorial(n) {
-//       return n !== 1 ? n * factorial(n - 1) : 1;
-//  }
+		function factorial(n) {
+      return n !== 1 ? n * factorial(n - 1) : 1;
+ }
 
-//       const result = factorial(8);
-//       console.log(result);
+      const result = factorial(8);
+      console.log(result);
 		// -----------------------------------
 		
 		// Calculator
 		
-		// const addition = (args) => args?.reduce((acc, val) => acc + val)
-		// const substraction = (args) => {
-		// 	return args?.reduce((acc, val) => acc - val)
-		// }
-		// const multiplication = (args) => args?.reduce((acc, val) => acc * val)
-		// const division = (args) => args?.reduce((acc, val) => acc / val)
+		const addition = (args) => args?.reduce((acc, val) => acc + val)
+		const substraction = (args) => {
+			return args?.reduce((acc, val) => acc - val)
+		}
+		const multiplication = (args) => args?.reduce((acc, val) => acc * val)
+		const division = (args) => args?.reduce((acc, val) => acc / val)
 
-		// const calculate = (callback, ...args) => {
-		// 	return callback(args);
-		// }
+		const calculate = (callback, ...args) => {
+			return callback(args);
+		}
 
-		// const result1 = calculate(addition, 1,1,1,1);
-		// const result2 = calculate(substraction, 20,10,5);
-		// const result3 = calculate(multiplication, 2,10,2);
-		// const result4 = calculate(division, 20,10,2);
+		const result1 = calculate(addition, 1,1,1,1);
+		const result2 = calculate(substraction, 20,10,5);
+		const result3 = calculate(multiplication, 2,10,2);
+		const result4 = calculate(division, 20,10,2);
 
-		// console.log(result1);
-		// console.log(result2);
-		// console.log(result3);
-		// console.log(result4);
+		console.log(result1);
+		console.log(result2);
+		console.log(result3);
+		console.log(result4);
 		// --------------------------------
 
 		//  Fibonacci
